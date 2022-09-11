@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+.name3{
+    box-shadow:inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    font-size: 2rem;
+    color: rgb(69, 75, 165);
+}
+.name4{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}

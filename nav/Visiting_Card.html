@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Labhaik_Electrical
+    </title>
+    <!-- add icon link -->
+    <link rel="icon" href="../img/Top-icon.png">
+
+     <!-- css and bootstrap link-->
+    <link href=" ../index.css" rel="stylesheet">
+    <link href="../css/Visiting_Card.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="main">
+        <!-------------Company logo and name-------------->
+        <div class="container_1">
+
+            <div class="container_logo">
+                <img src="../img/Top-icon.png">
+            </div>
+            <div class="comapanyname_2">
+                <p>LABHAIK ELECTRICAL WORKS</p>
+            </div>
+            <div class="top3">
+                <img src="../img/pngegg.png">
+
+            </div>
+
+        </div>
+        <!---------------Nav_bar------------>
+        <div class="container-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a class="link" href="../index.html">Home</a>
+                    </div>
+                    <div class="col">
+                        <a class="link" href="Service.html">Service</a>
+                    </div>
+                    <div class="col">
+                        <a class="link" href="About.html">About</a>
+                    </div>
+                    <div class="col">
+                        <a class="link" href="Contact.html">Contact</a>
+                    </div>
+                    <div class="col">
+                        <a class="link" href="Visiting_Card.html">Card</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------Body part------------->
+        <div class="main_container">
+            <div class="card" id="card1">
+                <h1 id="removetag">Please <mark><u>ON</u></mark> The Bulb To See Visiting Card</h1>
+                <img id="vcard">
+            </div>
+
+            <div class="container1">
+                <div class="box1" id="onoff">
+                    <img src="../img/logo1.gif" id="changeImg">
+                </div>
+                <div class="box2">
+                    <button onclick="myFunction1()" id="on">ON</button>
+                    <button onclick="myFunction2()" id="off">OFF</button>
+                </div>
+            </div>
+        </div>
+        <!-------------fotter-------------->
+        <div class="fotter">
+            <div class="me">
+                About me:
+                <li>MOHAMMED ABDUL SALEEM Owner of "Labhaik Electrical Works", This website provides useful information
+                    in finding the best
+                    electrician in Labhaik! We aim to deliver you with a high level of service and quality
+                    assurance. We
+                    only recommend highly trained personnel that will make every project easy
+                </li>
+            </div>
+            <div class="contact">
+                Contact_detail's:<br>
+                <li>Name: MOHAMMED ABDUL SALEEM</li>
+                <li>Profession: Electrician</li>
+                <li>WhatsApp:<a href="https://wa.me/9948432834" target="_blank"> Click here to chat</a></li>
+                <li>Mobile.no: <br>1) 9948432834<br>
+                    2) 9063604499<br></li>
+            </div>
+            <div class="gst">
+                About Business:
+                <ul>Certified By Government
+                    <li>ELECTRICAL LICENSED HOLDER</li>
+                    <li>GST.NO : 36BMXPM8569A1ZD</li>
+                    <li>Experience: 12 Years</li>
+                </ul>
+                <ul>Address:
+                    <li>24-1052/1a, prakasham panthulu nagar near masjid, Gajularamaram, Hyderabad, Medchal
+                        Malkajgiri,Telangana, 500055</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+<!---------------JAvascript-------------->
+    <script>
+        let on = document.getElementById("onoff");
+        const img = document.getElementById("vcard");
+        const card = document.getElementById("card1");
+        const rtag = document.getElementById("removetag");
+        function myFunction1() {
+            document.getElementById("changeImg").src = "../img/logo2.gif";
+            img.style.visibility = "visible";
+            img.style.height = "100%";
+            img.style.width = "100%";
+            card.style.height = "";
+            rtag.remove();
+            img.src = "../img/vcard.png";
+            on.style.background = "black";
+        }
+        function myFunction2() {
+            document.getElementById("changeImg").src = "../img/logo1.gif";
+            img.style.visibility = "hidden";
+            card.style.height = "0rem";
+            rtag.remove();
+            img.src = "";
+            on.style.background = "white";
+        }
+    </script>
+
+</body>
+
+</html>

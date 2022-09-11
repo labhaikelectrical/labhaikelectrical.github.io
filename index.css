@@ -1,0 +1,284 @@
+ /*...........Heading company logo and name.......*/
+ .main{
+    height:1fr;
+    border: 0.2rem solid rgb(69, 75, 165);
+    margin:0.1rem;
+    border-radius: 1rem;
+}
+ .container_1{
+ 
+    display: grid;
+  background-color: rgb(69, 75, 165);
+    box-shadow:inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    margin: 1rem;
+    /*grid-template-columns:repeat(1,minmax(8rem,8rem)) 1fr;
+    grid-template-rows: repeat(auto-fit,minmax(5rem,9rem));*/
+    grid-template-columns: repeat(1,minmax(8rem,8rem)) 1fr 8rem;
+    grid-template-rows: repeat(auto-fit,minmax(5rem,8rem));
+}
+.container_logo img{
+     height: 100%;
+     width: 100%;
+}
+.comapanyname_2{
+    
+   font-weight: bolder;
+   font-weight: 900;
+    font-size:3rem;
+    color:white;
+    text-align: center; 
+    padding-top:2rem;
+    
+    
+}
+.top3 img{
+   
+    height: 100%;
+    width: 100%;
+}
+/*....................container_1 End...............*/
+
+/*................container-2 start navbar.................*/ 
+.container-2{
+    height:2rem;
+    margin: 0 1rem 0 1rem;
+    box-shadow:inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+    background-color: rgb(69, 75, 165);
+}
+.col{
+     color:aliceblue;
+     font-size: 1.2rem;
+     padding-top: 0.2rem;
+     box-shadow: 0 0 0.1rem 0 white;
+     text-align: center;
+}
+    
+.link{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+/*..................End of navbar container-2..........*/
+
+/*..............container3 about start......*/
+.about{
+    margin: 1rem;
+    box-shadow:inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.name{
+    font-style: italic;
+    text-align: center;  
+    color: rgb(69, 75, 165);
+}
+.container_3{
+    display: grid;
+    grid-template-columns:8rem 1fr;
+    grid-template-rows:1fr;
+}
+.box_2 .name{
+    text-shadow: 0px 2px 5px rgba(115, 184, 207, 0.8);
+}
+.box_1 .name{
+    position: absolute;
+    top:5px;
+    width: fit-content;
+    
+}
+ 
+.box_1 .detail{
+    position: absolute;
+    top:4rem;
+    width:fit-content;
+    
+}
+.first{
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+}
+.first img{
+    width: 100%;
+
+}
+.what1{
+     
+    height:auto;
+    width: 30%;
+    position:absolute;
+    top:15%;   
+}
+.what_we{
+    margin-left: 2.5%;
+    font-style: italic;
+    font-weight: bolder;
+    color:rgb(69, 75, 165);
+    text-shadow: 0px 11px 10px rgba(115, 184, 207, 0.8);
+}
+/*......................Container3 end..............*/
+
+/*..........fotter start.............*/
+.fotter{
+    
+    display: grid;
+    /*grid-template-rows: repeat(1,18rem);*/
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    justify-content: center;
+   background-color: rgb(47, 45, 45);
+   margin:1rem;
+   padding:2rem;
+   
+  
+}
+.me{
+    color: white; 
+    padding: 0.5rem; 
+    border: 1px solid white;
+}
+.contact{
+    
+    color:white;
+    padding: 0.5rem; 
+    border: 1px solid white;
+}       
+.gst{
+     color:white;
+     padding: 0.5rem; 
+     border: 1px solid white;    
+}
+/*.................fotter end here.............*/
+
+/*..............Logo_animation......................
+
+.container_logo{
+    position:relative;
+    animation:example 3s infinite;
+}
+@keyframes example {
+     
+    from{
+        background-image: url("../logo1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+       margin: 1rem;
+    }
+    to{
+        background-image: url("../logo2.gif");
+        background-repeat: no-repeat;
+        background-size:contain;
+       margin: 1rem;
+    
+    }
+
+}
+/*....................End......................*/
+
+
+/*...................MediaQuery start.............*/
+@media only screen and (max-width: 1000px){
+    .name{ 
+        text-align: center
+    }
+    .what1{
+        font-size: 90%;
+    }
+    .comapanyname_2{
+        font-size:2.8rem;
+        padding: 0%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .comapanyname_2
+    {
+         font-size: 2rem;
+        
+    }
+    .detail{
+        font-size: 0.9rem;
+        margin: 0;
+        top:0;
+    }
+    .what1{
+        font-size: 0.87rem;
+        top:20%;
+    }
+    .me{font-size: 80%;}
+    .contact{font-size: 80%;}
+    .gst{font-size: 80%;}
+}
+@media only screen and (max-width: 700px){
+    .detail{
+        font-size: 0.8rem;
+        margin: 0;
+        top:0;
+    }
+    .comapanyname_2
+    {
+         font-size: 1.90rem;
+          
+         
+    }
+    .what1{
+        font-size: 70%;
+    }
+    .me{
+        font-size: 70%;
+    }
+    .display_1
+    {
+         font-size: 1.8rem;
+        width:fit-content
+    }
+    .contact{font-size: 70%;}
+    .gst{font-size: 70%;}
+}
+@media only screen and (max-width: 600px) {
+    .comapanyname_2
+    {
+         font-size: 1.90rem;
+         
+         
+    }
+    .container-2 .col{font-size: 0.9rem;}
+    .container_3 .box_1{
+        height: 1fr;
+    }
+    .name{
+        font-size:1rem;
+        top:0;
+         
+    }
+    .detail{
+        font-size: 0.8rem;
+    }
+    .what1{
+        font-size: 45%;
+    }
+    .me{
+        font-size: 50%;
+    }
+    .contact{font-size: 50%;}
+    .gst{font-size: 50%;}
+}
+@media only screen  and (max-width:450px) {
+    .container_1{
+        grid-template-columns: repeat(1,minmax(5rem,6rem)) 1fr 6rem;
+    }
+
+     .comapanyname_2{
+          font-size:1.5rem;
+          padding: 5%;
+    }
+    .top3 .img{
+        height: 100%;
+        width: 50%;
+    }
+}
+ /*..............mediaquery end...........*/
